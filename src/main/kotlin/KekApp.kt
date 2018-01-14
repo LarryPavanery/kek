@@ -6,7 +6,7 @@ fun main(args: Array<String>) {
     val express = require("express")
     val app = express()
 
-    app.get("/", { req, res ->
+    app.get("/", { _, res ->
         res.type("text/plain")
         res.send("Hello KEK!")
     })
