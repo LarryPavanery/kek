@@ -13,6 +13,7 @@
   "author": "larrypavanery",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "kotlin": "^1.2.10",
     "request": "^2.83.0"
