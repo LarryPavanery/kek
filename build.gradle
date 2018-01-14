@@ -58,6 +58,10 @@ task wrapper(type: Wrapper) {
     gradleVersion = '4.2.1'
 }
 
+// Need to deploy on Heroku
+// https://github.com/pmhsfelix/KotlinFirst/wiki/heroku-hosting
+task stage(dependsOn: ['installDist'])
+
 task copyJsFilesFromDependencies(dependsOn: build) {
     try {
         //copy all necessary .js files
